@@ -15,7 +15,7 @@ model Feedback {
 
   type String
   message String
-  screenshot String?
+  screenshot String? @db.LongText
 
   @@map("feedbacks")
 }
